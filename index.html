@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A futuristic student-built concept for the Fishers High School spirit shop.">
+  <meta name="theme-color" content="#080808">
+  <title>ShopFHS Future</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="announcement">
+    <span class="status-dot"></span>
+    Student-built concept store · Payments coming later
+  </div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="ShopFHS home">
+      <span class="brand-mark">F</span>
+      <span>SHOP<span>FHS</span></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span>
+      <span class="sr-only">Open menu</span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#shop">Shop</a>
+      <a href="#customize">Customize</a>
+      <a href="#student-run">Student Run</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <button class="bag-button" id="openCart" type="button" aria-label="Open shopping bag">
+      Bag <span id="bagCount">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid"></div>
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+
+      <div class="hero-copy reveal">
+        <p class="kicker">FISHERS HIGH SCHOOL · INDIANA</p>
+        <h1>Spirit wear,<br><span>remixed.</span></h1>
+        <p class="hero-text">A cleaner, faster way to find Tiger gear, customize it, and build your order.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#shop">Shop the collection <span>↗</span></a>
+          <button class="button button-ghost" id="heroCustomize" type="button">Add your name +$5</button>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-label="Futuristic chrome smiley face artwork">
+        <span class="orbit orbit-one"></span>
+        <span class="orbit orbit-two"></span>
+        <div class="smiley-stage">
+          <img src="images/smiley.png" alt="Chrome smiley face with red lighting">
+        </div>
+        <div class="floating-tag tag-one">20 ITEMS</div>
+        <div class="floating-tag tag-two">CUSTOM +$5</div>
+      </div>
+
+      <a class="scroll-cue" href="#shop">Scroll to shop <span>↓</span></a>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">THE COLLECTION</p>
+          <h2>Find your fit.</h2>
+        </div>
+        <p>Browse the full concept catalog. Select an item to choose an option or add custom letters.</p>
+      </div>
+
+      <div class="catalog-toolbar reveal">
+        <label class="search-box">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search shirts, hats, crewnecks..." autocomplete="off">
+        </label>
+        <div class="filter-row" id="filterRow" aria-label="Product categories"></div>
+      </div>
+
+      <div class="catalog-status">
+        <span id="productCount">20 items</span>
+        <span>Local pickup · Payment not connected</span>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <img src="images/smiley.png" alt="">
+        <h3>No gear found.</h3>
+        <button type="button" id="clearSearch">Clear search</button>
+      </div>
+    </section>
+
+    <section class="custom-section" id="customize">
+      <div class="custom-preview reveal">
+        <div class="preview-screen">
+          <div class="screen-label"><span></span> LIVE PREVIEW</div>
+          <img src="images/smiley.png" alt="Chrome smiley customization preview">
+          <strong id="sectionPreviewText">FHS</strong>
+        </div>
+      </div>
+      <div class="custom-copy reveal">
+        <p class="kicker">MAKE IT YOURS</p>
+        <h2>Your letters.<br>Your look.</h2>
+        <p>Add a name or initials to an eligible item for $5. Choose the font, color, and placement, then preview it before adding it to your bag.</p>
+        <ul>
+          <li><span>01</span> Up to 12 letters</li>
+          <li><span>02</span> Three type styles</li>
+          <li><span>03</span> Front, back, or sleeve</li>
+        </ul>
+        <button class="button button-primary" id="sectionCustomize" type="button">Start customizing <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="student-section" id="student-run">
+      <div class="student-intro reveal">
+        <p class="kicker">MORE THAN A STORE</p>
+        <h2>Built by students.<br>Powered by Tigers.</h2>
+      </div>
+      <div class="info-grid">
+        <article class="info-card red-card reveal">
+          <span>01</span>
+          <h3>DECA</h3>
+          <p>Students help manage the store, learn real business skills, and build school spirit.</p>
+        </article>
+        <article class="info-card reveal">
+          <span>02</span>
+          <h3>Tiger Bites</h3>
+          <p>A student-focused part of the ShopFHS experience with convenient school-day pickup.</p>
+        </article>
+        <article class="info-card dark-card reveal">
+          <span>03</span>
+          <h3>Local Pickup</h3>
+          <p>Orders are designed for pickup at Fishers High School. Details are confirmed with each order.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+      <div class="section-heading reveal">
+        <div>
+          <p class="kicker">QUICK ANSWERS</p>
+          <h2>Good to know.</h2>
+        </div>
+      </div>
+      <div class="faq-list reveal">
+        <details>
+          <summary><span>01</span> Can I pay on this version?<b>+</b></summary>
+          <p>Not yet. This version is the redesigned storefront and cart. Square or another payment system can be connected later.</p>
+        </details>
+        <details>
+          <summary><span>02</span> How does customization work?<b>+</b></summary>
+          <p>Choose an eligible product, select “Customize,” enter up to 12 letters, and choose your font, color, and placement. Customization adds $5.</p>
+        </details>
+        <details>
+          <summary><span>03</span> Where do I receive my order?<b>+</b></summary>
+          <p>The concept uses local pickup at Fishers High School. Exact pickup details can be added when payments and order management are connected.</p>
+        </details>
+        <details>
+          <summary><span>04</span> Does my bag stay saved?<b>+</b></summary>
+          <p>Yes. Your bag is saved in your browser so it remains after you refresh or reopen the page on the same device.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="closing-section">
+      <img src="images/smiley.png" alt="">
+      <p class="kicker">READY WHEN YOU ARE</p>
+      <h2>Wear the energy.</h2>
+      <a class="button button-light" href="#shop">Explore all gear <span>↑</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">F</span><span>SHOP<span>FHS</span></span></a>
+    <p>Student-built redesign concept for Fishers High School.</p>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <div class="overlay" id="productOverlay" hidden>
+    <div class="modal product-modal" role="dialog" aria-modal="true" aria-labelledby="productTitle">
+      <button class="close-button" type="button" data-close="product" aria-label="Close product">×</button>
+      <div class="modal-visual" id="productVisual">
+        <span class="visual-code" id="productCode">FHS/01</span>
+        <img src="images/smiley.png" alt="" id="productImage">
+      </div>
+      <div class="modal-copy">
+        <p class="kicker" id="productCategory">CATEGORY</p>
+        <h2 id="productTitle">Product name</h2>
+        <p class="modal-price" id="productPrice">$0.00</p>
+        <p class="modal-description">Official-style Tiger gear for this ShopFHS redesign concept. Choose an option below to build your order.</p>
+        <label class="field-label" for="productOption">Choose an option</label>
+        <select id="productOption"></select>
+        <div class="modal-actions">
+          <button class="button button-primary" id="addProduct" type="button">Add to bag</button>
+          <button class="button button-outline" id="customizeProduct" type="button">Customize +$5</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="customOverlay" hidden>
+    <div class="modal custom-modal" role="dialog" aria-modal="true" aria-labelledby="customTitle">
+      <button class="close-button" type="button" data-close="custom" aria-label="Close customizer">×</button>
+      <div class="customizer-preview" id="customizerPreview">
+        <span class="visual-code">CUSTOM LAB</span>
+        <img src="images/smiley.png" alt="Chrome smiley preview">
+        <strong id="customPreviewText">FHS</strong>
+        <span class="placement-label" id="placementLabel">FRONT</span>
+      </div>
+      <div class="modal-copy custom-controls">
+        <p class="kicker">+$5 CUSTOMIZATION</p>
+        <h2 id="customTitle">Make it yours.</h2>
+
+        <label class="field-label" for="customItem">Item</label>
+        <select id="customItem"></select>
+
+        <label class="field-label" for="customOption">Size / option</label>
+        <select id="customOption"></select>
+
+        <label class="field-label" for="customText">Name or initials <span id="letterCount">3/12</span></label>
+        <input id="customText" maxlength="12" value="FHS" placeholder="Enter up to 12 letters">
+
+        <fieldset>
+          <legend>Font</legend>
+          <div class="choice-row" id="fontChoices">
+            <button class="choice active" data-font="future" type="button">Future</button>
+            <button class="choice" data-font="bold" type="button">Bold</button>
+            <button class="choice" data-font="classic" type="button">Classic</button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Color</legend>
+          <div class="color-row" id="colorChoices">
+            <button class="color-choice active" data-color="#ef1b24" style="--swatch:#ef1b24" type="button" aria-label="Red"></button>
+            <button class="color-choice" data-color="#ffffff" style="--swatch:#ffffff" type="button" aria-label="White"></button>
+            <button class="color-choice" data-color="#080808" style="--swatch:#080808" type="button" aria-label="Black"></button>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Placement</legend>
+          <div class="choice-row" id="placementChoices">
+            <button class="choice active" data-placement="Front" type="button">Front</button>
+            <button class="choice" data-placement="Back" type="button">Back</button>
+            <button class="choice" data-placement="Sleeve" type="button">Sleeve</button>
+          </div>
+        </fieldset>
+
+        <div class="custom-total"><span>Customization</span><strong>+$5.00</strong></div>
+        <button class="button button-primary full-button" id="addCustom" type="button">Add customized item</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-shell" id="cartShell" hidden>
+    <button class="cart-backdrop" id="cartBackdrop" type="button" aria-label="Close shopping bag"></button>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header">
+        <div><p class="kicker">YOUR ORDER</p><h2 id="cartTitle">Shopping bag</h2></div>
+        <button class="close-button" id="closeCart" type="button" aria-label="Close shopping bag">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer" id="cartFooter"></div>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
